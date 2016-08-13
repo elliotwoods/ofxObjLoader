@@ -400,7 +400,7 @@ glmWriteMTL(GLMmodel* model, char* modelpath, char* mtllibname)
   if (!file) {
     fprintf(stderr, "glmWriteMTL() failed: can't open file \"%s\".\n",
 	    filename);
-    exit(1);
+    //exit(1);
   }
   free(filename);
 
@@ -478,7 +478,7 @@ glmFirstPass(GLMmodel* model, FILE* file)
 	break;
       default:
 	printf("glmFirstPass(): Unknown token \"%s\".\n", buf);
-	exit(1);
+	//exit(1);
 	break;
       }
       break;
@@ -1327,7 +1327,7 @@ glmReadOBJ(char* filename)
   if (!file) {
     fprintf(stderr, "glmReadOBJ() failed: can't open data file \"%s\".\n",
 	    filename);
-    exit(1);
+    //exit(1);
   }
 
   /* allocate a new model */
@@ -1457,7 +1457,7 @@ glmWriteOBJ(GLMmodel* model, char* filename, GLuint mode)
   if (!file) {
     fprintf(stderr, "glmWriteOBJ() failed: can't open file \"%s\" to write.\n",
 	    filename);
-    exit(1);
+    //exit(1);
   }
 
   /* spit out a header */
