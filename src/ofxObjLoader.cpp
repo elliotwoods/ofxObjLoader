@@ -171,7 +171,7 @@ void save(string path, const ofMesh& mesh_, bool flipFace, bool flipNormals, boo
 			string material_name = file.getBaseName();
 			
 			string image_name = material_name + ".png";
-			ofPixels pix = image.getPixelsRef();
+			ofPixels pix = image.getPixels();
 			
 			// flip save texture
 			pix.mirror(true, false);
@@ -516,7 +516,7 @@ void faceColorToTexture(ofMesh& mesh, ofImage& image)
 	
 	mesh.clearTexCoords();
 	
-	image.getPixelsRef().set(0);
+	image.getPixels().set(0);
 	
 	float texel_size = (1. / image.getWidth()) * 0.5;
 	
