@@ -23,7 +23,7 @@
  */
 
 #include "ofxObjLoader.h"
-#include "glm.h"
+#include "../libs/glm.h"
 
 OFX_OBJLOADER_BEGIN_NAMESPACE
 
